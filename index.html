@@ -18,209 +18,415 @@
             background: rgb(88, 179, 224);
             padding: 100px 0;
             transform: skew(0deg, -4deg) translateY(-90px);
+        }
+
+        .gridproject {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 290px;
+            grid-gap: 15px;
+        }
+
+        .gridproject>div {
+            text-align: center;
+            border: 2px solid black;
 
         }
 
         .margin {
             margin-top: -150px;
-            margin-left: 45%;
+            margin-left: 44%;
             position: absolute;
         }
 
         .dot {
             height: 30px;
             width: 30px;
-            margin-left: 250px
+            margin-left: 55%;
         }
+
+        .grid-box1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 10px;
+        }
+
+        .grid-box2 {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: 1fr;
+
+        }
+
 
         @media only screen and (max-width: 768px) {
             .margin {
-                margin-top: -150px;
-                margin-left: 37%;
-                position: absolute;
+                margin-left: 25%;
             }
 
             .dot {
-                height: 30px;
-                width: 30px;
-                margin-left: 160px
+
+                margin-left: 77%;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="diagonal"></div>
-    <div class="margin">
-        <img style="height: 200px; width:200px; border:15px solid rgb(118, 200, 241)" class="rounded-circle"
-            src="assets/img/div.jpeg">
-    </div>
+    <div class="container-fluid">
+        <div class="diagonal"></div>
+        <div class="margin">
 
-    <div class="offset-5">
+            <img style="height: 200px; width:200px; border:15px solid rgb(118, 200, 241)" class="rounded-circle"
+                src="assets/img/div.jpeg">
+
+        </div>
         <div style="background:rgb(77, 187, 241)" class="rounded-circle dot"></div>
-    </div>
-    <div class="container text-center text-muted mt-4 pl-4">
-        <h1 class="font-weight-bold">Divyansh Srivastava</h1>
-        <h3 class="font-weight-bold"> Frontend Developer</h3>
-        <ul class="list-inline mb-3">
-            <li class=" list-inline-item text-muted p-1"><i class="fa fa-map-marker  "></i> Bangalore</li>
-            <li class="list-inline-item text-muted p-1"><i class="fa fa-phone  "></i> +91 996 4809 287</li>
-            <li class="list-inline-item text-muted p-1"><i class="fa fa-envelope  "></i>srivastavadivyansh121@gmail.com
-            </li>
-        </ul>
-        <ul class="list-inline">
-            <li class=" list-inline-item"><a href="https://www.linkedin.com/in/divyansh-srivastava-276787196/"
-                    target="blank"><img src="assets/img/linkdin.png" style="height:33px; width:36px;"></a>
-            <li class=" list-inline-item ml-2"><a href="https://github.com/divyansh1234" target="blank"><img
-                        src="assets/img/github.svg" style="height:33px; width:36px;"></a>
-            <li class="list-inline-item ml-2"><a href="https://twitter.com/divyansh_Sr" target="blank"><img
-                        src="assets/img/twitter.svg" style="height:33px; width:36px;"></a>
-        </ul>
-        <p class="mt-2"> I'm a Bangalore based Web designer and Front-end Developer.Committed to code. <br> Love to
-            follow the Regime
-            "Eat,Sleep,Code,Repeat".
-            Mainly Focuses on writing<br> clean and efficient code.</p>
-        <a href="#" target="blank" download"><button class="btn btn-primary">Download Resume</button></a>
-    </div>
-    <hr>
-    <div class="container">
-        <h2 class="text-center text-muted font-weight-bold m-4">Tech Stack</h2>
-
-
-        <div class="row justify-content-around">
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/html5.svg" style="height: 80px; padding: 12px;">
-                <p>HTML5</p>
-            </div>
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/git.svg" style="height: 80px; padding: 12px;">
-                <p>GIT</p>
-            </div>
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/css3.svg" style="height: 80px; padding: 12px;">
-                <p>CSS3</p>
-            </div>
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/bootstrap.svg"
-                    style="height: 80px; padding: 12px;">
-                <p>BOOTSTRAP</p>
-            </div>
+        <div class="container text-center text-muted mt-4 pl-4">
+            <h1 class="font-weight-bold">Divyansh Srivastava</h1>
+            <h3 class="font-weight-bold"> Front-End Web Developer</h3>
+            <ul class="list-inline mb-3">
+                <li class=" list-inline-item text-muted p-1"><i class="fa fa-map-marker  "></i> Bangalore</li>
+                <li class="list-inline-item text-muted p-1"><i class="fa fa-phone  "></i> +91 996 4809 287</li>
+                <li class="list-inline-item text-muted p-1"><i class="fa fa-envelope  "></i>
+                    srivastavadivyansh121@gmail.com
+                </li>
+            </ul>
+            <ul class="list-inline">
+                <li class=" list-inline-item"><a href="https://www.linkedin.com/in/divyansh-srivastava-276787196/"
+                        target="blank"><img src="assets/img/linkdin.png" style="height:33px; width:36px;"></a>
+                <li class=" list-inline-item ml-2"><a href="https://github.com/divyansh1234" target="blank"><img
+                            src="assets/img/github.svg" style="height:33px; width:36px;"></a>
+                <li class="list-inline-item ml-2"><a href="https://twitter.com/divyansh_Sr" target="blank"><img
+                            src="assets/img/twitter.svg" style="height:33px; width:36px;"></a>
+                <li class="list-inline-item ml-2"><a href="https://www.hackerrank.com/divyansh1234?hr_r=1"
+                        target="blank"><img src="assets/img/hackerrank.svg" style="height:42px; width:42px;"></a>
+            </ul>
+            <h5 class="mt-2"> I'm a Bangalore based Web designer and Software Developer <br>trained in Front-End
+                Development,
+                Data Structure and Algorithm <br>at Masai School Bootcamp. Mainly Focuses on writing clean and efficient
+                code. <br>Looking forward to
+                join a Company where I can use my skills to contribute <br>towards Company and individual growth.</h5>
+            <a href="assets/Resume/resume.pdf" target="blank" download"><button class="btn btn-primary">Download
+                    Resume</button></a>
         </div>
-        <div class="row justify-content-around">
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/javascript.svg"
-                    style="height: 80px; padding: 12px;">
-                <p>JAVASCRIPT</p>
-            </div>
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/react.svg" style="height: 80px; padding: 12px;">
-                <p>REACT</p>
-            </div>
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/django.svg" style="height: 80px; padding: 12px;">
-                <p>DJANGO</p>
-            </div>
-            <div class="text-center">
-                <img class="rounded-circle shadow-sm" src="assets/img/firebase.svg"
-                    style="height: 80px; padding: 12px;">
-                <p>FIREBASE</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
 
-        <h2 class="text-center text-muted font-weight-bold m-3">Proficiencies</h2>
-        <div class="row justify-content-around">
-            <div>
-                <img src="assets/img/react.svg" style="height: 150px;">
-                <h3 class="text-muted">REACT APP</h3>
-            </div>
-            <div>
-                <img src="assets/img/frontend.png" style="height: 150px;">
-                <h3 class="text-muted">FrontEnd</h3>
-            </div>
-            <div>
-                <img src="assets/img/data.png" style="height: 150px;">
-                <h3 class="text-muted">Data Structures</h3>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="mt-5"></div>
-        <h2 class="text-center text-muted font-weight-bold m-3">Projects</h2>
-        <div class="mt-5"></div>
-        <div class="row justify-content-around">
-            <div class="card shadow col-sm-12 col-lg-3 m-2">
-                <img class="card-img-top" src="assets/img/landing1.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Flipkart Clone</h5>
-                    <p class="card-text"> In this flipkart Clone website user is also given an option to add his own
-                        product with help of add button</p>
-                    <a class="card-link text-muted mt-5" href="https://github.com/divyansh1234/masai-sprint3"
-                        target="blank"><i class="fa fa-github"></i><strong>Github</strong></a>
+        <hr>
+        <div class="container">
+            <h1 class="text-center text-muted font-weight-bold my-4">Tech Stack</h1>
+            <div class="grid-box1">
+                <div class="text-center">
+                    <img class="rounded-circle shadow-sm" src="assets/img/html5.svg" style="height: 80px;">
+                    <p>HTML5</p>
                 </div>
-            </div>
-            <div class="card shadow col-sm-12 col-lg-3 m-2">
-                <img class="card-img-top" src="assets/img/healthAdvisor.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Health Advisor</h5>
-                    <p class="card-text">The website is made for calculating the calorie based on food intake and
-                        exercise done during the day</p>
-                    <a class="card-link text-muted mt-5" href="https://github.com/divyansh1234/masai-sprint3"
-                        target="blank"><i class="fa fa-github"></i><strong>Github</strong></a>
+                <div class="text-center">
+                    <img class="rounded-circle shadow-sm" src="assets/img/git.svg" style="height: 80px;">
+                    <p>GIT</p>
                 </div>
-            </div>
-            <div class="card shadow col-sm-12 col-lg-3 m-2">
-                <img class="card-img-top" src="assets/img/expense.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Expense Manager</h5>
-                    <p class="card-text">This website helps to keep track of all the expese of the user and help in
-                        managing the savings</p>
-                    <a class="card-link text-muted mt-5" href="https://github.com/divyansh1234/masai-sprint3"
-                        target="blank"><i class="fa fa-github"></i><strong>Github</strong></a>
+                <div class="text-center"> <img class="rounded-circle shadow-sm" src="assets/img/css3.svg"
+                        style="height: 80px;">
+                    <p>CSS3</p>
+                </div>
+                <div class="text-center"> <img class="rounded-circle shadow-sm" src="assets/img/bootstrap.svg"
+                        style="height: 80px;">
+                    <p>BOOTSTRAP</p>
+                </div>
+                <div class="text-center"> <img class="rounded-circle shadow-sm" src="assets/img/javascript.svg"
+                        style="height: 80px;">
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div class="text-center"> <img class="rounded-circle shadow-sm" src="assets/img/redux.svg"
+                        style="height: 80px;">
+                    <p>REACT-REDUX</p>
+                </div>
+                <div class="text-center"> <img class="rounded-circle shadow-sm" src="assets/img/jquery.png"
+                        style="height: 80px;">
+                    <p>JQUERY</p>
+                </div>
+                <div class="text-center">
+                    <img class="rounded-circle shadow-sm" src="assets/img/firebase.svg" style="height: 80px;">
+                    <p>FIREBASE</p>
                 </div>
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row justify-content-around">
-            <div>
-                <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
-                    class="mt-1">
-                    <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
-                        1200
+        <hr>
+        <div class="container">
+            <h1 class="text-center text-muted font-weight-bold my-2">Proficiencies</h1>
+            <div class="grid-box2">
+                <div class="text-center">
+                    <img class="rounded-circle shadow-sm" src="assets/img/react.svg" style="height: 80px;">
+                    <h4 class="text-muted"><strong>React App</strong></h4>
+                    <p class="text-center">React app and ReactJs</p>
+
+                </div>
+                <div class="text-center">
+                    <img class="rounded-circle shadow-sm" src="assets/img/frontend.png" style="height: 80px;">
+                    <h4 class="text-muted"><strong>Frontend</strong></h4>
+                    <p class="text-center">HTML,JS,CSS Bootstrap</p>
+                </div>
+                <div class="text-center">
+                    <img class="rounded-circle shadow-sm" src="assets/img/data.png" style="height: 80px;">
+                    <h4 class="text-muted"><strong>Data Structures</strong></h4>
+                    <p class="text-center">Basic level of Data Structures</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h1 class="text-center text-muted font-weight-bold">Projects</h1>
+            <div class="container text-center mt-3">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 col-md-12 mb-3">
+                        <div class="card" style="border-bottom: 1rem solid;">
+                            <div class="card-body shadow"><img class="img-fluid mb-3" src="assets/img/landing3.png"
+                                    height="100px">
+                                <h4 class="card-title "><strong>Flipkart Clone</strong></h4>
+                                <p class="card-text">In this flipkart Clone website user is also given an option to add
+                                    his own product with help of add button</p>
+                                <div style="border: 1px solid grey;">
+
+
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://github.com/divyansh1234/masai-sprint3" target="blank"><i
+                                            class="fa fa-github"></i><strong>&nbsp;Github&nbsp;</strong></a>
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://sakshisinha.github.io/masai-Sprint-3/" target="blank"><i
+                                            class="fa fa-external-link"></i>&nbsp;<strong>Demo Link</strong></a>
+
+                                </div>
+                                <div class="mt-2">
+                                    <img style="width: 30px" class=" ml-2"
+                                        src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="">
+                                    <img style="width: 30px" src="https://image.flaticon.com/icons/svg/174/174854.svg"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://p7.hiclipart.com/preview/793/545/309/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-12 mb-3">
+                        <div class="card" style="border-bottom: 1rem solid;">
+                            <div class="card-body shadow"><img class="img-fluid mb-3" src="assets/img/landing4.png"
+                                    height="100px">
+                                <h4 class="card-title "><strong>TODO APP</strong></h4>
+                                <p class="card-text">In this Project the user can enter his list of items which he wants
+                                    to do after sometimes.</p>
+                                <div style="border: 1px solid grey;">
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://github.com/divyansh1234/masai-sprint4" target="blank"><i
+                                            class="fa fa-github"></i><strong>&nbsp;Github&nbsp;</strong></a>
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://divyansh1234.github.io/masai-sprint1/" target="blank"><i
+                                            class="fa fa-external-link"></i>&nbsp;<strong>Demo Link</strong></a>
+
+                                </div>
+                                <div class="mt-2">
+                                    <img style="width: 30px" class=" ml-2"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                        alt="">
+                                    <img style="width: 30px" src="https://image.flaticon.com/icons/svg/174/174854.svg"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://p7.hiclipart.com/preview/793/545/309/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-sm-12 col-md-12 mb-3">
+                        <div class="card" style="border-bottom: 1rem solid;">
+                            <div class="card-body shadow"><img class="img-fluid mb-3" src="assets/img/landing1.png"
+                                    height="100px">
+                                <h4 class="card-title "><strong>Health Advisor</strong></h4>
+                                <p class="card-text">The user can enter his calorie intake and type of food taken
+                                    and
+                                    excercise done to find net calorie</p>
+                                <div style="border: 1px solid grey;">
+
+
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://github.com/divyansh1234/masai-sprint1" target="blank"><i
+                                            class="fa fa-github"></i><strong>&nbsp;Github&nbsp;</strong></a>
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://sakshisinha.github.io/masai-Sprint-3/" target="blank"><i
+                                            class="fa fa-external-link"></i>&nbsp;<strong>Demo Link</strong></a>
+
+                                </div>
+                                <div class="mt-2">
+
+                                    <img style="width: 30px" src="https://image.flaticon.com/icons/svg/174/174854.svg"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://p7.hiclipart.com/preview/793/545/309/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-12 mb-3">
+                        <div class="card" style="border-bottom: 1rem solid;">
+                            <div class="card-body shadow"><img class="img-fluid mb-3" src="assets/img/landing2.png"
+                                    height="100px">
+                                <h4 class="card-title "><strong>Expense Manager</strong></h4>
+                                <p class="card-text">The user can enter his salary,extra income,etc
+                                    to find his total income earned & total balance.</p>
+                                <div style="border: 1px solid grey;">
+
+
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://github.com/divyansh1234/masai-sprint2" target="blank"><i
+                                            class="fa fa-github"></i><strong>&nbsp;Github&nbsp;</strong></a>
+                                    <a class="card-link text-muted mt-2"
+                                        href="https://sakshisinha.github.io/masai-Sprint-3/" target="blank"><i
+                                            class="fa fa-external-link"></i>&nbsp;<strong>Demo Link</strong></a>
+
+                                </div>
+                                <div class="mt-2">
+
+                                    <img style="width: 30px" src="https://image.flaticon.com/icons/svg/174/174854.svg"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+                                        alt="">
+                                    <img style="width: 30px"
+                                        src="https://p7.hiclipart.com/preview/793/545/309/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row offset-lg-0 offset-md-0 offset-sm-0 offset-0" style="margin-bottom: 50px;">
+                <div class="text-center col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" style="width: 250px; ">
+                    <div style="width: 200px; height: 200px; border-radius: 50%; border: 30px solid; "
+                        class="mt-5 mx-auto shadow">
+                        <p class="text-center font-weight-bold"
+                            style="margin-top: 50px; font-size: 35px; color: #3BCEC8;">
+                            1200+
+                        </p>
+                    </div>
+                    <div class="">
+                        <p class="mt-3 font-weight-bold" style=" font-size: 35px; line-height: 25px;">Hours
+                        </p>
+                        <p class="" style="font-size: 25px">
+                            of Coding
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" style="width: 250px;">
+                    <div style="width: 200px; height: 200px; border-radius: 50%; border: 30px solid; "
+                        class="mt-5 mx-auto shadow">
+                        <p class="text-center font-weight-bold"
+                            style="margin-top: 50px; font-size: 35px; color: #3BCEC8;">
+                            100+
+                        </p>
+                    </div>
+                    <p class="mt-3 font-weight-bold" style="font-size: 35px; line-height: 25px">HackerRank
+                    </p>
+                    <p class="mt-2" style="font-size: 25px; ">
+                        Problems
                     </p>
                 </div>
-                <p class="text-center">Hours <br>of coding</p>
-            </div>
-            <div>
-                <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
-                    class="mt-1">
-                    <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
-                        100+
+                <div class="text-center col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" style="width: 250px;">
+                    <div style="width: 200px;height:200px;border-radius: 50%;border:30px solid;"
+                        class="mt-5 mx-auto shadow">
+                        <p class="text-center font-weight-bold"
+                            style="margin-top: 50px; font-size: 35px; color: #3BCEC8;">
+                            150+
+                        </p>
+                    </div>
+                    <p class="mt-3 font-weight-bold" style=" font-size: 35px; line-height: 25px">Git</p>
+                    <p class="mt-2" style="font-size: 25px;">
+                        Commits
                     </p>
                 </div>
-                <p class="text-center">Hackerank<br> Problems</p>
-            </div>
-            <div>
-                <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
-                    class="mt-1">
-                    <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
-                        124+
+                <div class="text-center col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3" style="width: 250px;">
+                    <div style="width: 200px;height:200px;border-radius: 50%;border:30px solid;"
+                        class="mt-5 mx-auto shadow">
+                        <p class="text-center font-weight-bold"
+                            style="margin-top: 50px; font-size: 35px; color: #3BCEC8;">
+                            100+
+                        </p>
+                    </div>
+                    <p class="mt-3 font-weight-bold" style="font-size: 35px; line-height: 25px">Soft</p>
+                    <p class="mt-2" style="font-size: 25px">
+                        Skills
                     </p>
                 </div>
-                <p class="text-center">Git<br> Commits</p>
-
             </div>
         </div>
+        <hr>
+        <div class="container">
+            <img src="assets/img/githubprofile.png" height="250px" width="100%">
+        </div>
     </div>
-    <hr>
-    <div class="container">
-        <img src="assets/img/githubprofile.png">
-    </div>
+
+
 </body>
 
 </html>
+
+
+
+<!-- <div class="container">
+    <div class="row justify-content-center">
+        <div class="m-2">
+            <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
+                class="mt-1">
+                <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                    1200+
+                </p>
+            </div>
+            <p class="text-center">Hours <br>of coding</p>
+        </div>
+        <div class="m-2">
+            <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
+                class="mt-1">
+                <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                    110+
+                </p>
+            </div>
+            <p class="text-center">Hackerank<br> Problems</p>
+        </div>
+        <div class="m-2">
+            <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
+                class="mt-1">
+                <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                    100+
+                </p>
+            </div>
+            <p class="text-center">Soft<br> Skills</p>
+        </div>
+        <div class="m-2">
+            <div style="width: 200px;height:200px; background: white;border-radius: 50%;border:16px solid; border-color:blue;"
+                class="mt-1">
+                <p class="text-center font-weight-bold" style="margin-top: 55px;font-size: 35px">
+                    10+
+                </p>
+            </div>
+            <p class="text-center">Projects</p>
+
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <img src="assets/img/githubprofile.png">
+</div> -->
